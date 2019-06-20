@@ -3,6 +3,5 @@
 .idea/
 node_modules/
 package-lock.json
-src/main.js
-src/app.js
-
+index.html
+info.txt
