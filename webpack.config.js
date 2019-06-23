@@ -1,5 +1,14 @@
 const path = require('path');
 let name = '';
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const OptimizeJsPlugin = require('optimize-js-plugin');
+
+const plugins = [new HtmlWebpackPlugin({
+	template: 'src/index.html',
+	filename: 'index.html',
+	inject: 'body'
+})];
+
 
 module.exports = (env) => {
 	const environment = env || 'development';
@@ -7,6 +16,11 @@ module.exports = (env) => {
 	switch (environment) {
 		case 'development':
 			name = 'start';
+			plugins.push(
+				new OptimizeJsPlugin({
+					sourceMap: false
+				})
+			)
 		break;
 		case "production":
 		default :
@@ -44,6 +58,8 @@ module.exports = (env) => {
 					
 				}
 			]
-		}
+		},
+		plugins: plugins
+		
 	}
 }

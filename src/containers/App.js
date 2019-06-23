@@ -7,6 +7,7 @@ import Image from '../components/Image';
 import TodoList from '../components/Todolist';
 import TodoForm from '../components/Todoform';
 
+
 class App extends React.Component {
 	constructor(props){
 		super(props);
@@ -54,7 +55,7 @@ class App extends React.Component {
 							<TodoList items={this.state.data} remove={this.removeTodo.bind(this)}/>
 						</ul>
 						<div>
-						<Image className={this.state.class} alt={this.state.caption} src={this.state.src}/>
+						<Image alt={this.state.caption} src={this.state.src}/>
 						</div>
 					</div>
 				</div>
