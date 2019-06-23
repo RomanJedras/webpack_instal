@@ -5,6 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "g": "^2.0.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "url-loader": "^2.0.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
@@ -26,7 +29,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack",
+    "start": "webpack --env production",
     "server": "http-server",
     "init-project": "npm install && npm-run-all init:*",
     "browsersync": "browser-sync start --server  --files css/*.css *.html"

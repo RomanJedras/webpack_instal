@@ -1,12 +1,13 @@
 import React from 'react';
 import uuid from 'uuid';
+import  '../style.scss';
 import style from './App.css';
 import Title from '../components/Title';
+import Image from '../components/Image';
 import TodoList from '../components/Todolist';
 import TodoForm from '../components/Todoform';
 
 class App extends React.Component {
-	
 	constructor(props){
 		super(props);
 		this.state = {
@@ -19,9 +20,14 @@ class App extends React.Component {
 			}, {
 				id: 3,
 				text: 'feed my cat'
-			}]
+			}],
+			src: '../images/pngtree-throne-png-image_26966.jpg',
+			caption: 'picture',
+			class: 'TodoImage'
 		};
 	}
+	
+	
 	
 	addTodo(val){
 		const todo = {
@@ -39,7 +45,7 @@ class App extends React.Component {
 	
 	render() {
 		return (
-			<div className={style.TodoApp, 'container'}>
+			<div className={style.TodoApp, 'container','TodoApp'}>
 				<div className={'row'}>
 					<div className={'col-xs-12 col-md-12'}>
 						<Title title="ToDoList App" length={this.state.data.length}/>
@@ -47,11 +53,15 @@ class App extends React.Component {
 						<ul className={style.Todo}>
 							<TodoList items={this.state.data} remove={this.removeTodo.bind(this)}/>
 						</ul>
+						<div>
+						<Image className={this.state.class} alt={this.state.caption} src={this.state.src}/>
+						</div>
 					</div>
 				</div>
 			</div>
 		);
 	}
+
 }
 
 export default App;

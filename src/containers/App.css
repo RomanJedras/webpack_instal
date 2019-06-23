@@ -20,3 +20,9 @@
 	display: flex;
 	justify-content: center;
 }
+
+.TodoImage {
+	padding: 5px 0;
+	display: flex;
+	justify-content: center;
+}
