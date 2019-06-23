@@ -1,0 +1,17 @@
+.AppTitle {
+	padding: 10px;
+	background-color: rgb(66, 66, 87);
+	color: #FFF;
+	display: flex;
+	justify-content: center;
+}
+
+.AppNumber {
+	text-align: center;
+	font-size: 25px;
+}
+
+.NoTasks {
+	color: rgb(66, 66, 87);
+	font-weight: bold;
+}
