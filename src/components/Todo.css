@@ -1,0 +1,10 @@
+.Todo {
+	font-size: 18px;
+	line-height: 2;
+}
+
+.Todo:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	color: rgb(48, 48, 138);
+}
