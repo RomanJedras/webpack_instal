@@ -6,7 +6,7 @@ class Image extends React.Component {
 		super(props);
 		this.state = {
 			width: '400px',
-			height: 'auto'
+			height: '100%'
 		}
 	}
 	
