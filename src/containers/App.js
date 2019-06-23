@@ -6,6 +6,7 @@ import Title from '../components/Title';
 import Image from '../components/Image';
 import TodoList from '../components/Todolist';
 import TodoForm from '../components/Todoform';
+import { hot } from 'react-hot-loader';
 
 
 class App extends React.Component {
@@ -65,4 +66,5 @@ class App extends React.Component {
 
 }
 
-export default App;
+export default hot(module)(App);
+

@@ -19,5 +19,7 @@
 	padding: 5px 0;
 	display: flex;
 	justify-content: center;
+	width: 230px;
+	margin: 0 auto;
 }
 
