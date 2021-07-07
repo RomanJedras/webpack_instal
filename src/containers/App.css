@@ -1,0 +1,28 @@
+.TodoApp {
+	background-color: #F5F5F5;
+	color: #222;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.Todo {
+	list-style-type: none;
+}
+
+.Todo li {
+	padding: 5px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.TodoImage {
+	padding: 5px 0;
+	display: flex;
+	justify-content: center;
+}
